@@ -6,10 +6,10 @@ module.exports = async (client, message) => {
 
     const prefix = config.prefix
 
-    const args = message.content.slice(prefix.length).trim();
-    const cmd = args.toLowerCase()
-
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
     console.log(args);
+    const cmd = args.shift().toLowerCase()
+
     if(!message.content.startsWith(prefix)) 
         return;
 
