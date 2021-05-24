@@ -1,15 +1,23 @@
 {
-  "name": "your-bot-name",
+  "name": "zap-adivinhe-a-pessoa",
   "version": "1.0.0",
-  "description": "A very complete discord bot",
-  "main": "index.js",
+  "description": "",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jonatanc05/zap-adivinhe-a-pessoa.git"
+  },
   "scripts": {
     "start": "nodemon src/index.js"
   },
   "engines": {
     "node": ">=12"
   },
-  "author": "your-name",
+  "author": "Jônata",
+  "contributors": [
+    "Guilherme Sena",
+    "Pedro César Mesquita Ferreira"
+  ],
   "license": "ISC",
   "dependencies": {
     "@types/node": "^12.12.31",
