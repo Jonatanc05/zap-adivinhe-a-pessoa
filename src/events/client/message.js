@@ -1,4 +1,4 @@
-const config = require("../../../config.json")
+const config = require("../../config/discord")
 
 module.exports = async (client, message) => {
 

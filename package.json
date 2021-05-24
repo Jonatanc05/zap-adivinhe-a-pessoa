@@ -23,6 +23,7 @@
     "@types/node": "^12.12.31",
     "ascii-table": "0.0.9",
     "discord.js": "^12.0.2",
+    "dotenv": "^10.0.0",
     "fs": "0.0.1-security",
     "ms": "^2.1.2"
   },
