@@ -25,6 +25,6 @@ module.exports = client => {
         }
     }
     
-    ["utility"].forEach(c => load(c))
+    ["utility", "main"].forEach(c => load(c))
     console.log(table.toString())
 }

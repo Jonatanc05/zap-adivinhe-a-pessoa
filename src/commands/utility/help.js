@@ -1,27 +1,24 @@
-const { readdirSync } = require('fs')
-const path = require('path')
 const config = require("../../../config.json")
 
 const {MessageEmbed} = require("discord.js")
 
 module.exports = { 
-    command: "help", 
-    name: "Help", 
-    usage: "help [command]", 
+    name: "Help",
     description: "Mostra uma lista com todos os comandos", 
-    category: "Utilidade", 
+    usage: "help [command]", 
+    command: "help",
     accessible: "Membros", 
+    category: "Utilidade", 
 run: async (client, message, args) => {
 
     if(!args[0]) {
-        const categories = readdirSync(path.join(__dirname, '../../commands/'))
         const prefix = config.prefix
 
         let embed = new MessageEmbed()
         .setTitle(`Lista de comandos (${client.commands.size})`)
         .setColor(`0x7289da`)
         .setFooter(`Escreva ${prefix}help (comando) para mais informações`)
-
+        
         client.commands.forEach(comando => {
                 embed.addField(comando.name, comando.description);
         });
